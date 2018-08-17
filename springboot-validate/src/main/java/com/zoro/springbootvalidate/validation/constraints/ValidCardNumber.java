@@ -27,7 +27,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Documented
 @Constraint(validatedBy = {ValidCardNumberConstraintValidator.class})
 public @interface ValidCardNumber {
-    String message() default "{javax.validation.constraints.Max.message}";
+    String message() default "{zoro.validation.constraints.AssertDiy.message}";
 
     Class<?>[] groups() default { };
 
